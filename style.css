@@ -1,0 +1,119 @@
+/* ====================== Style Css ====================== */
+:root {
+  --black: #000;
+  --blue: #224;
+  --white: #fff;
+  --gray: #bbb;
+  --purple: #808;
+  --golden: #fa0;
+}
+body {
+  background: var(--black);
+  display: grid;
+  justify-items: center;
+}
+.header-page {
+  font-size: 8vw;
+  color: var(--golden);
+  font-family: "Rubik Glitch", system-ui;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #b60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8vh;
+  -webkit-text-stroke: 1px #a50;
+  border-radius: 999px;
+  box-shadow: 0 0 10px var(--golden);
+}
+.bird-img {
+  width: 80%;
+  aspect-ratio: 1/1;
+  margin-top: 8vh;
+}
+.description-page {
+  width: 80%;
+  margin-top: 10vh;
+  border: 1px solid var(--gray);
+  letter-spacing: 1px;
+  border-bottom: none;
+  border-top: none;
+  border-radius: 999px;
+  padding: 0.5rem;
+  font-size: 4vw;
+  color: var(--golden);
+  line-height: 1.5;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  transform: rotate(0);
+}
+.player-music {
+  width: 80%;
+  height: 10vh;
+  margin-top: 5px;
+  border: 1px solid var(--golden);
+  box-shadow: 0 0 10px var(--golden);
+  border-radius: 999px;
+  background: var(--black);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.btn-play {
+  height: 60%;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(135deg,var(--golden),var(--black),var(--golden));
+  border: 1px solid var(--golden);
+}
+.btn-play:hover {
+  background: var(--golden);
+  box-shadow: 0 0 10px var(--golden);
+}
+.btn-play i {
+  color: var(--black);
+  font-size: 6vw;
+}
+.audio-bar {
+  height: 10%;
+  width: 100%;
+  background: var(--white);
+  border-radius: 4vw;
+}
+.audio-bar-fill {
+  height: 100%;
+  width: 0%;
+  margin-left: 0;
+  background: var(--golden);
+  box-shadow: 0 0 10px var(--golden);
+  border-radius: 999px;
+}
+.btn-download {
+  font-size: 4vw;
+  color: var(--golden);
+}
+.music-name {
+  color: var(--gray);
+  width: 80%;
+  height: 8vh;
+  margin-top: 10vh;
+  border: 1px solid #666;
+  font-size: 4vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
