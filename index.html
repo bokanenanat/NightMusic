@@ -1,87 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href='css/style.css'>
-  <title>Night Sound</title>
-</head>
-<body>
-  <canvas id='canvas'></canvas>
-  <header class='header-page'>Naight Music</header>
-  <img src='images/bird.jpg' class='bird-img'>
-  <p class='description-page'>Night Music<br>selection of the Best Persian Rap Tracks</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Night Sound</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <header class="header-page">Naight Music</header>
+    <img src="images/bird.jpg" class="bird-img" />
+    <p class="description-page">
+      Night Music<br />selection of the Best Persian Rap Tracks
+    </p>
 
-  <!-- ==================== Music -1- ==================== -->
-  <h1 class='music-name'>Fasle parvaz</h1>
-  <section class='player-music'>
-    <audio class='track' id='track-1' src='songs/fasle parvaz.mp3'>
-    </audio>
-    <button class='btn-play' data-track='track-1'>
-      <i class="fa-solid fa-play icon-play"></i>
-    </button>
-    <div class='audio-bar'>
-      <div class='audio-bar-fill' id='audio-bar-fill'></div>
-    </div>
-    <a class='btn-download' download><i class="fa-solid fa-download download-icon"></i></a>
-  </section>
-<!-- ==================== Music -2- ==================== -->
-  <h1 class='music-name'>tavalod</h1>
-  <section class='player-music'>
-    <audio class='track' id='track-2' src='songs/tavalod.mp3'>
-    </audio>
-    <button class='btn-play' data-track='track-2'>
-      <i class="fa-solid fa-play icon-play"></i>
-    </button>
-    <div class='audio-bar'>
-      <div class='audio-bar-fill' id='audio-bar-fill'></div>
-    </div>
-    <a class='btn-download' download><i class="fa-solid fa-download download-icon"></i></a>
-  </section>
-<!-- ==================== Music -3- ==================== -->
-  <h1 class='music-name'>vagon</h1>
-  <section class='player-music'>
-    <audio class='track' id='track-3' src='songs/Vagon.mp3'>
-    </audio>
-    <button class='btn-play' data-track='track-3'>
-      <i class="fa-solid fa-play icon-play"></i>
-    </button>
-    <div class='audio-bar'>
-      <div class='audio-bar-fill' id='audio-bar-fill'></div>
-    </div>
-    <a class='btn-download' download><i class="fa-solid fa-download download-icon"></i></a>
-  </section>
-  <!-- ==================== Music -4- ==================== -->
-  <h1 class='music-name'>ghatreh-ghatreh</h1>
-  <section class='player-music'>
-    <audio class='track' id='track-4' src='songs/ghatreh.mp3'>
-    </audio>
-    <button class='btn-play' data-track='track-4'>
-      <i class="fa-solid fa-play icon-play"></i>
-    </button>
-    <div class='audio-bar'>
-      <div class='audio-bar-fill' id='audio-bar-fill'></div>
-    </div>
-    <a class='btn-download' download><i class="fa-solid fa-download download-icon"></i></a>
-  </section>
-  <!-- ==================== Music -5- ==================== -->
-  <h1 class='music-name'>Frou pashi</h1>
-  <section class='player-music'>
-    <audio class='track' id='track-5' src='songs/Frou pashi.mp3'>
-    </audio>
-    <button class='btn-play' data-track='track-5'>
-      <i class="fa-solid fa-play icon-play"></i>
-    </button>
-    <div class='audio-bar'>
-      <div class='audio-bar-fill' id='audio-bar-fill'></div>
-    </div>
-    <a class='btn-download' download><i class="fa-solid fa-download download-icon"></i></a>
-  </section>
-  
-  <script src='js/script.js'>
-  </script>
-</body>
+    <!-- ==================== Music -1- ==================== -->
+    <h1 class="music-name">Fasle parvaz</h1>
+    <section class="player-music">
+      <audio class="track" id="track-1" src="songs/Fasle parvaz.mp3"></audio>
+      <button class="btn-play" data-track="track-1">
+        <i class="fa-solid fa-pause icon-play"></i>
+      </button>
+      <section class="section-bar">
+        <div class="audio-bar">
+          <div class="audio-bar-fill" id="audio-bar-fill"></div>
+        </div>
+        <div>
+          <h1 class="time-music">0 / 0</h1>
+        </div>
+      </section>
+      <a class="btn-download" download
+        ><i class="fa-solid fa-download download-icon"></i
+      ></a>
+      <button class="btn-show-text-music btn-text">
+        <i class="fa-solid fa-font"></i>
+      </button>
+      <section class="section-text-music" data-text="in the name of god">
+        <button class="btn-close-section-text"></button>
+      </section>
+    </section>
+    <!-- ==================== Music -2- ==================== -->
+    <h1 class="music-name">tavalod</h1>
+    <section class="player-music">
+      <audio class="track" id="track-2" src="songs/tavalod.mp3"></audio>
+      <button class="btn-play" data-track="track-2">
+        <i class="fa-solid fa-play icon-play"></i>
+      </button>
+      <section class="section-bar">
+        <div class="audio-bar">
+          <div class="audio-bar-fill" id="audio-bar-fill"></div>
+        </div>
+        <div>
+          <h1 class="time-music">0 / 0</h1>
+        </div>
+      </section>
+      <a class="btn-download" download
+        ><i class="fa-solid fa-download download-icon"></i
+      ></a>
+      <button class="btn-show-text-music btn-text">
+        <i class="fa-solid fa-font"></i>
+      </button>
+      <section class="section-text-music">
+        msbjene
+        <button class="btn-close-section-text"></button>
+      </section>
+    </section>
+    <!-- ==================== Music -3- ==================== -->
+    <h1 class="music-name">vagon</h1>
+    <section class="player-music">
+      <audio class="track" id="track-3" src="songs/Vagon.mp3"></audio>
+      <button class="btn-play" data-track="track-3">
+        <i class="fa-solid fa-play icon-play"></i>
+      </button>
+      <section class="section-bar">
+        <div class="audio-bar">
+          <div class="audio-bar-fill" id="audio-bar-fill"></div>
+        </div>
+        <div>
+          <h1 class="time-music">0 / 0</h1>
+        </div>
+      </section>
+      <a class="btn-download" download
+        ><i class="fa-solid fa-download download-icon"></i
+      ></a>
+      <button class="btn-show-text-music btn-text">
+        <i class="fa-solid fa-font"></i>
+      </button>
+      <section class="section-text-music">
+        <p>
+          <br /><br />
+          من که هستم معنی نداره شب برات !<br />
+          شما گل، من شبدرات ( شبدرهات)<br />
+          از تو مینویسم میشه تو خودکارم انگار<br />
+          جوهر و مرکب، نبات !<br />
+          منم بالاخره یه روزی به لطف خدا،<br />
+          میچینم یه میزِ مرتب برات …<br />
+          باز میشه این در …<br />
+          صبح میشه این شب …<br />
+          <br />
+          آره خودم میخرم برات هرچی شما بخوای<br />
+          تو اصن بگو هرچند، فرقی نداره !<br />
+          بگو اصن هرچقدرم درآد !<br />
+          من جلو شما جیبم کلا برقرار<br />
+          زیپ یا دکمه؟<br />
+          تو جیبه پول الفرار !<br />
+          یهو دیدی جلو پات زیر یه پالت دلارو گرفتم فندک رفت هوا<br />
+          <br />
+          نمیدونی چقدر گنگه که<br />
+          تو اینهمه، همدم من یکه !<br />
+          اگه خداوند متعال توییو داده<br />
+          که همون کسی که<br />
+          هم متوکل به خودشونه<br />
+          هم از دم همیشه اماده متحرکه …<br />
+          بیش فعال<br />
+          با وقار<br />
+          با حیا<br />
+          مودب<br />
+          شکرِ خدا<br />
+          <br />
+          تو بگو نصفه شب، ۴:۲۰ اصن<br />
+          توکه اینو میدونم فقط ایمور تتلو ایسترسن (میخوای) !<br />
+          منم سنه حیران (حیرونِ تو) شُكْرًا لِلّٰهِ<br />
+          ان‌شاءلله میبینم تو دستمه دیگه<br />
+          دستای شما اگه خدا بخواد …<br />
+          نود و صد هم<br />
+          نه! صد و بیست درصد !!
+          <br /><br />
+        </p>
+        <button class="btn-close-section-text">×</button>
+      </section>
+    </section>
+    <!-- ==================== Music -4- ==================== -->
+    <h1 class="music-name">ghatreh-ghatreh</h1>
+    <section class="player-music">
+      <audio class="track" id="track-4" src="songs/ghatreh.mp3"></audio>
+      <button class="btn-play" data-track="track-4">
+        <i class="fa-solid fa-play icon-play"></i>
+      </button>
+      <section class="section-bar">
+        <div class="audio-bar">
+          <div class="audio-bar-fill" id="audio-bar-fill"></div>
+        </div>
+        <div>
+          <h1 class="time-music">0 / 0</h1>
+        </div>
+      </section>
+      <a class="btn-download" download
+        ><i class="fa-solid fa-download download-icon"></i
+      ></a>
+      <button class="btn-show-text-music btn-text">
+        <i class="fa-solid fa-font"></i>
+      </button>
+    </section>
+    <!-- ==================== Music -5- ==================== -->
+    <h1 class="music-name">Frou pashi</h1>
+    <section class="player-music">
+      <audio class="track" id="track-5" src="songs/Frou pashi.mp3"></audio>
+      <button class="btn-play" data-track="track-5">
+        <i class="fa-solid fa-play icon-play"></i>
+      </button>
+      <section class="section-bar">
+        <div class="audio-bar">
+          <div class="audio-bar-fill" id="audio-bar-fill"></div>
+        </div>
+        <div>
+          <h1 class="time-music">0 / 0</h1>
+        </div>
+      </section>
+      <a class="btn-download" download
+        ><i class="fa-solid fa-download download-icon"></i
+      ></a>
+      <button class="btn-show-text-music btn-text">
+        <i class="fa-solid fa-font"></i>
+      </button>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
