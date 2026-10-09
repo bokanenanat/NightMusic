@@ -1,188 +1,133 @@
-<!doctype html>
-<html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Night Sound</title>
-  </head>
-  <body>
-    <canvas id="canvas"></canvas>
-    <header class="header-page">Naight Music</header>
-    <img src="images/bird.jpg" class="bird-img" />
-    <p class="description-page">
-      Night Music<br />selection of the Best Persian Rap Tracks
-    </p>
+/* ====================== Java Script ====================== */
+document.querySelectorAll(".btn-download").forEach((btnDon) => {
+  const parent = btnDon.parentElement;
+  const music = parent.querySelector(".track");
+  btnDon.href = music.src;
+});
 
-    <!-- ==================== Music -1- ==================== -->
-    <h1 class="music-name">Fasle parvaz</h1>
-    <section class="player-music">
-      <audio class="track" id="track-1" src="songs/Fasle parvaz.mp3"></audio>
-      <button class="btn-play" data-track="track-1">
-        <i class="fa-solid fa-pause icon-play"></i>
-      </button>
-      <section class="section-bar">
-        <div class="audio-bar">
-          <div class="audio-bar-fill" id="audio-bar-fill"></div>
-        </div>
-        <div>
-          <h1 class="time-music">0 / 0</h1>
-        </div>
-      </section>
-      <a class="btn-download" download
-        ><i class="fa-solid fa-download download-icon"></i
-      ></a>
-      <button class="btn-show-text-music btn-text">
-        <i class="fa-solid fa-font"></i>
-      </button>
-      <section class="section-text-music" data-text="in the name of god">
-        <button class="btn-close-section-text"></button>
-      </section>
-    </section>
-    <!-- ==================== Music -2- ==================== -->
-    <h1 class="music-name">tavalod</h1>
-    <section class="player-music">
-      <audio class="track" id="track-2" src="songs/tavalod.mp3"></audio>
-      <button class="btn-play" data-track="track-2">
-        <i class="fa-solid fa-play icon-play"></i>
-      </button>
-      <section class="section-bar">
-        <div class="audio-bar">
-          <div class="audio-bar-fill" id="audio-bar-fill"></div>
-        </div>
-        <div>
-          <h1 class="time-music">0 / 0</h1>
-        </div>
-      </section>
-      <a class="btn-download" download
-        ><i class="fa-solid fa-download download-icon"></i
-      ></a>
-      <button class="btn-show-text-music btn-text">
-        <i class="fa-solid fa-font"></i>
-      </button>
-      <section class="section-text-music">
-        msbjene
-        <button class="btn-close-section-text"></button>
-      </section>
-    </section>
-    <!-- ==================== Music -3- ==================== -->
-    <h1 class="music-name">vagon</h1>
-    <section class="player-music">
-      <audio class="track" id="track-3" src="songs/Vagon.mp3"></audio>
-      <button class="btn-play" data-track="track-3">
-        <i class="fa-solid fa-play icon-play"></i>
-      </button>
-      <section class="section-bar">
-        <div class="audio-bar">
-          <div class="audio-bar-fill" id="audio-bar-fill"></div>
-        </div>
-        <div>
-          <h1 class="time-music">0 / 0</h1>
-        </div>
-      </section>
-      <a class="btn-download" download
-        ><i class="fa-solid fa-download download-icon"></i
-      ></a>
-      <button class="btn-show-text-music btn-text">
-        <i class="fa-solid fa-font"></i>
-      </button>
-      <section class="section-text-music">
-        <p>
-          <br /><br />
-          من که هستم معنی نداره شب برات !<br />
-          شما گل، من شبدرات ( شبدرهات)<br />
-          از تو مینویسم میشه تو خودکارم انگار<br />
-          جوهر و مرکب، نبات !<br />
-          منم بالاخره یه روزی به لطف خدا،<br />
-          میچینم یه میزِ مرتب برات …<br />
-          باز میشه این در …<br />
-          صبح میشه این شب …<br />
-          <br />
-          آره خودم میخرم برات هرچی شما بخوای<br />
-          تو اصن بگو هرچند، فرقی نداره !<br />
-          بگو اصن هرچقدرم درآد !<br />
-          من جلو شما جیبم کلا برقرار<br />
-          زیپ یا دکمه؟<br />
-          تو جیبه پول الفرار !<br />
-          یهو دیدی جلو پات زیر یه پالت دلارو گرفتم فندک رفت هوا<br />
-          <br />
-          نمیدونی چقدر گنگه که<br />
-          تو اینهمه، همدم من یکه !<br />
-          اگه خداوند متعال توییو داده<br />
-          که همون کسی که<br />
-          هم متوکل به خودشونه<br />
-          هم از دم همیشه اماده متحرکه …<br />
-          بیش فعال<br />
-          با وقار<br />
-          با حیا<br />
-          مودب<br />
-          شکرِ خدا<br />
-          <br />
-          تو بگو نصفه شب، ۴:۲۰ اصن<br />
-          توکه اینو میدونم فقط ایمور تتلو ایسترسن (میخوای) !<br />
-          منم سنه حیران (حیرونِ تو) شُكْرًا لِلّٰهِ<br />
-          ان‌شاءلله میبینم تو دستمه دیگه<br />
-          دستای شما اگه خدا بخواد …<br />
-          نود و صد هم<br />
-          نه! صد و بیست درصد !!
-          <br /><br />
-        </p>
-        <button class="btn-close-section-text">×</button>
-      </section>
-    </section>
-    <!-- ==================== Music -4- ==================== -->
-    <h1 class="music-name">ghatreh-ghatreh</h1>
-    <section class="player-music">
-      <audio class="track" id="track-4" src="songs/ghatreh.mp3"></audio>
-      <button class="btn-play" data-track="track-4">
-        <i class="fa-solid fa-play icon-play"></i>
-      </button>
-      <section class="section-bar">
-        <div class="audio-bar">
-          <div class="audio-bar-fill" id="audio-bar-fill"></div>
-        </div>
-        <div>
-          <h1 class="time-music">0 / 0</h1>
-        </div>
-      </section>
-      <a class="btn-download" download
-        ><i class="fa-solid fa-download download-icon"></i
-      ></a>
-      <button class="btn-show-text-music btn-text">
-        <i class="fa-solid fa-font"></i>
-      </button>
-    </section>
-    <!-- ==================== Music -5- ==================== -->
-    <h1 class="music-name">Frou pashi</h1>
-    <section class="player-music">
-      <audio class="track" id="track-5" src="songs/Frou pashi.mp3"></audio>
-      <button class="btn-play" data-track="track-5">
-        <i class="fa-solid fa-play icon-play"></i>
-      </button>
-      <section class="section-bar">
-        <div class="audio-bar">
-          <div class="audio-bar-fill" id="audio-bar-fill"></div>
-        </div>
-        <div>
-          <h1 class="time-music">0 / 0</h1>
-        </div>
-      </section>
-      <a class="btn-download" download
-        ><i class="fa-solid fa-download download-icon"></i
-      ></a>
-      <button class="btn-show-text-music btn-text">
-        <i class="fa-solid fa-font"></i>
-      </button>
-    </section>
+let statusPlay = false;
+let currentMusic = null;
+document.querySelectorAll(".btn-play").forEach((btnPlay) => {
+  btnPlay.addEventListener("click", () => {
+    btnPlay.style.background = '#fa0';
+    btnPlay.style.boxShadow = '0 0 15px #fa0';
+    const musicID = btnPlay.dataset.track;
+    const music = document.getElementById(musicID);
+    const parent = btnPlay.parentElement;
+    if (currentMusic&&currentMusic!==music) {
+      currentMusic.pause();
+      parent.querySelector(".icon-play").classList.remove("fa-pause");
+      parent.querySelector(".icon-play").classList.add("fa-play");
+      const lastParent = currentMusic.parentElement;
+      lastParent.querySelector(".icon-play").classList.remove("fa-pause");
+      lastParent.querySelector(".icon-play").classList.add("fa-play");
+      const lastBtnPlay = lastParent.querySelector('.btn-play');
+      lastBtnPlay.style.boxShadow = '';
+      lastBtnPlay.style.background = '';
+      
+      statusPlay = false;
+    }
+    const timeMusic = parent.querySelector('.time-music');
+    function shortTime(duration,current) {
+      if(duration>=60) {
+        let remainderDuration = Math.floor(duration%60);
+        let timeDuration = Math.floor(duration / 60);
+        let remainderCurrent = Math.floor(current % 60);
+        let timeCurrent = Math.floor(current / 60);
+        return timeCurrent+':'+remainderCurrent+'/'+timeDuration+':'+remainderDuration;
+      }
+    }
+    if (!statusPlay) {
+      music.play();
+      statusPlay = true;
+      currentMusic = music;
+      music.addEventListener("timeupdate", () => {
+        const prugress = (music.currentTime / music.duration) * 100;
+        parent.querySelector(".audio-bar-fill").style.width = `${prugress}%`;
+        timeMusic.textContent = shortTime(music.duration,music.currentTime);
+        if(music.currentTime === music.duration) {
+          parent.querySelector(".icon-play").classList.remove("fa-pause");
+          parent.querySelector(".icon-play").classList.add("fa-play");
+        }
+      });
+      parent.querySelector(".icon-play").classList.remove("fa-play");
+      parent.querySelector(".icon-play").classList.add("fa-pause");
+      statusPlay = true;
+    } else if (statusPlay === true) {
+      music.pause();
+      parent.querySelector(".icon-play").classList.remove("fa-pause");
+      parent.querySelector(".icon-play").classList.add("fa-play");
+      statusPlay = false;
+    }
+  });
+});
+document.querySelectorAll(".btn-show-text-music").forEach((textBtn) => {
+  textBtn.addEventListener("click", () => {
+    const parent = textBtn.parentElement;
+    const sectionText = parent.querySelector(".section-text-music");
+    sectionText.style.display = 'grid';
+    parent.querySelector('.btn-close-section-text').addEventListener('click',()=>{
+      sectionText.style.display = 'none';
+    });
+    
+  });
+});
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 
-    <script src="script.js"></script>
-  </body>
-</html>
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+
+    this.moveX = (Math.random() - 0.5) * 0.5;
+    this.moveY = (Math.random() - 0.5) * 0.5;
+
+    this.opacity = Math.random() * 0.6 + 0.2;
+    this.size = Math.random() * 1.2;
+
+    this.color = `rgba(255, 150, 0, ${this.opacity})`;
+  }
+
+  update() {
+    this.x += this.moveX;
+    this.y += this.moveY;
+
+    if (this.x > canvas.width || this.x < 0) {
+      this.moveX *= -1;
+    }
+
+    if (this.y > canvas.height || this.y < 0) {
+      this.moveY *= -1;
+    }
+  }
+
+  draw() {
+    ctx.beginPath();
+
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+}
+
+for (let i = 0; i < 90; i++) {
+  particles.push(new Particle());
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach((p) => {
+    p.update();
+    p.draw();
+  });
+  requestAnimationFrame(animate);
+}
+animate();
