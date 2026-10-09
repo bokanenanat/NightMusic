@@ -45,6 +45,10 @@ document.querySelectorAll(".btn-play").forEach((btnPlay) => {
         const prugress = (music.currentTime / music.duration) * 100;
         parent.querySelector(".audio-bar-fill").style.width = `${prugress}%`;
         timeMusic.textContent = shortTime(music.duration,music.currentTime);
+        if(music.currentTime === music.duration) {
+          parent.querySelector(".icon-play").classList.remove("fa-pause");
+          parent.querySelector(".icon-play").classList.add("fa-play");
+        }
       });
       parent.querySelector(".icon-play").classList.remove("fa-play");
       parent.querySelector(".icon-play").classList.add("fa-pause");
