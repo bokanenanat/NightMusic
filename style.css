@@ -60,7 +60,7 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
 }
 .btn-play {
   height: 60%;
@@ -69,19 +69,26 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
-  background: linear-gradient(135deg,var(--golden),var(--black),var(--golden));
+  background: #b8860b;
   border: 1px solid var(--golden);
 }
 .btn-play:hover {
-  background: var(--golden);
-  box-shadow: 0 0 10px var(--golden);
+  
 }
 .btn-play i {
   color: var(--black);
   font-size: 6vw;
 }
+.section-bar {
+  height: 100%;
+  width: 100%;
+  background: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
 .audio-bar {
-  height: 10%;
+  height: 20%;
   width: 100%;
   background: var(--white);
   border-radius: 4vw;
@@ -98,12 +105,53 @@ body {
   font-size: 4vw;
   color: var(--golden);
 }
+.btn-show-text-music {
+  font-size: 4vw;
+  color: var(--golden);
+  background: none;
+  border: none;
+}
+.section-text-music {
+  position: fixed;
+  top: 1%;
+  font-size: 3vw;
+  overflow-y: scroll;
+  height: 98%;
+  width: 96%;
+  border-radius: 999px;
+  background: var(--black);
+  color: white;
+  z-index: 10;
+  border: 1px solid var(--golden);
+  display: none;
+  box-shadow: 0 0 20px var(--golden);
+  text-align: center;
+  justify-items: center;
+}
+.btn-close-section-text {
+  width: 10vw;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  background: red;
+  font-size: 3vw;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 5%;
+  top: 5%;
+  border: none;
+  box-shadow: 0 0 10px #f00;
+}
 .music-name {
-  color: var(--gray);
+  color: #fff;
   width: 80%;
   height: 8vh;
   margin-top: 10vh;
-  border: 1px solid #666;
+  border: 1px solid #408;
+  box-shadow: 0 0 10px #60a;
+  border-radius: 5vw;
   font-size: 4vw;
   display: grid;
   align-items: center;
@@ -116,4 +164,15 @@ body {
   height: 100%;
   width: 100%;
   pointer-events: none;
+}
+.time-music {
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: var(--gray);
+  border: 1px solid #666;
 }
