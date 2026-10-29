@@ -72,6 +72,21 @@ document.querySelectorAll(".btn-show-text-music").forEach((textBtn) => {
     
   });
 });
+const scroller = document.querySelector('.scroll-bar');
+const cards = document.querySelectorAll('.scroll-card');
+let observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        entry.target.classList.toggle('active', entry.isIntersecting);
+      });
+    }, {
+      root: scroller,
+      threshold: 0.6
+    });
+
+    cards.forEach(card => observer.observe(card));
+
+
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -89,7 +104,7 @@ class Particle {
     this.moveY = (Math.random() - 0.5) * 0.5;
 
     this.opacity = Math.random() * 0.6 + 0.2;
-    this.size = Math.random() * 1.2;
+    this.size = Math.random() * 1.4;
 
     this.color = `rgba(255, 150, 0, ${this.opacity})`;
   }
@@ -131,3 +146,16 @@ function animate() {
   requestAnimationFrame(animate);
 }
 animate();
+let theme = 'dark';
+let btnColor = document.getElementById('change-color');
+let body = document.getElementById('body');
+btnColor.addEventListener('click',()=>{
+  if(theme==='dark') {
+    body.style.background = '#ccc';
+    theme = 'white';
+  }
+  else {
+    body.style.background = '#000';
+    theme = 'dark';
+  }
+});
