@@ -1,13 +1,13 @@
 /* ====================== Style Css ====================== */
 :root {
   --black: #000;
-  --blue: #224;
+  --blue: #0ff;
   --white: #fff;
   --gray: #bbb;
   --purple: #808;
   --golden: #fa0;
 }
-body {
+.body {
   background: var(--black);
   display: grid;
   justify-items: center;
@@ -31,6 +31,7 @@ body {
   width: 80%;
   aspect-ratio: 1/1;
   margin-top: 8vh;
+  border-radius: 3vw;
 }
 .description-page {
   width: 80%;
@@ -188,4 +189,87 @@ body {
   font-size: 3vw;
   color: var(--gray);
   border: 1px solid #666;
+}
+.scroll-bar {
+  width: 96%;
+  aspect-ratio: 1/0.5;
+  border: 1px solid #0af;
+  margin-top: 10vh;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  border-radius: 50%/20%;
+}
+.scroll-card {
+  height: 90%;
+  width: 30%;
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 1px solid #0cf;
+  box-shadow: 0 0 8px var(--blue);
+  flex-shrink: 0;
+  border-radius: 2vh;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr;
+  transition: all 1s ease;
+}
+.scroll-card:hover {
+  transform: rotateY(180deg);
+}
+.scroll-card img {
+  width: 98%;
+  border-radius: 2vh;
+}
+.scroll-card h1 {
+  width: 98%;
+  border: 1px solid #666;
+  font-size: 3vw;
+  color: #0fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+}
+.section-nav {
+  width: 80%;
+  max-width: 50rem;
+  aspect-ratio: 1/1;
+  border: none;
+  margin-top: 20vh;
+  border-radius: 10px;
+  box-shadow: 1px solid #88a;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: none;
+}
+.section-nav button, .section-nav a {
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #000;
+  font-size: 4vw;
+  color: #666;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 4vw;
+  text-decoration: none;
+  border: 1px solid var(--golden);
+  box-shadow: 0 0 6px var(--golden);
+  transition: all 0.5s ease;
+  font-family: 'Black Ops One', cursive;
+}
+.section-nav button:hover, a:hover {
+  color: #999;
+  text-shadow: 0 0 4px var(--golden);
+  font-size: 5vw;
+  -webkit-text-stroke: 1px var(--golden);
+  border: 1px solid var(--golden);
+  box-shadow: 0 0 12px var(--golden);
+  
 }
